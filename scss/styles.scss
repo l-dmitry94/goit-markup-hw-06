@@ -104,6 +104,11 @@ body {
             color: var(--ocean);
         }
     }
+
+    &__burger {
+        border: none;
+        background: none;
+    }
 }
 
 .logo {
@@ -748,3 +753,5 @@ body {
     visibility: hidden;
     pointer-events: none;
 }
+
+@import "media"

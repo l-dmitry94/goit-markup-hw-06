@@ -46,10 +46,15 @@
                     </li>
                 </ul>
             </address>
+            <button class="menu-toggle js-open-menu header__burger" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="header__burger-icon" width="32" height="22" stroke="black">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
         </div>
     </header>
 
-    <main class="main">
+    <!-- <main class="main">
 
         <section class="hero">
             <div class="container">
@@ -399,7 +404,7 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <div class="modal__overlay is-hidden" data-modal="">
         <div class="modal__content">
@@ -439,17 +444,20 @@
                 </div>
                 <div class="modal__form-textarea-block">
                     <label for="user-comment" class="modal__form-label">Comment</label>
-                    <textarea class="modal__form-input modal__form-textarea" id="user-comment" name="user-comment" placeholder="Text input"></textarea>
+                    <textarea class="modal__form-input modal__form-textarea" id="user-comment" name="user-comment"
+                        placeholder="Text input"></textarea>
                 </div>
                 <div class="modal__form-checkbox-block">
-                    <input class="visually-hidden modal__form-checkbox-hidden" type="checkbox" id="user-privacy" name="user-privacy" value="true"> 
+                    <input class="visually-hidden modal__form-checkbox-hidden" type="checkbox" id="user-privacy"
+                        name="user-privacy" value="true">
                     <label for="user-privacy" class="modal__form-label modal__form-checkbox-label">
                         <span class="modal__form-checkbox">
                             <svg class="icon-check" width="10" height="8">
-                                <use href="./images/icons.svg#icon-check"></use> 
+                                <use href="./images/icons.svg#icon-check"></use>
                             </svg>
                         </span>
-                        I accept the terms and conditions of the <a href="#" class="modal__form-label-link">Privacy Policy</a>
+                        I accept the terms and conditions of the <a href="#" class="modal__form-label-link">Privacy
+                            Policy</a>
                     </label>
                 </div>
                 <button class="modal__form-submit" type="submit">Send</button>
@@ -457,7 +465,77 @@
         </div>
     </div>
 
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu modal__button-close" type="button">
+            <svg class="modal__close-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-modal-close"></use>
+            </svg>
+        </button>
+
+        <ul class="list header__mobile-menu">
+            <li class="header__menu-item">
+                <a class="link header__menu-link current" href="./index.html">Studio</a>
+            </li>
+            <li class="header__menu-item">
+                <a class="link header__menu-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="header__menu-item">
+                <a class="link header__menu-link" href="">Contacts</a>
+            </li>
+        </ul>
+
+        <div class="header__bottom-block">
+            <address class="header__mobile-address">
+                <ul class="list header__contact">
+                    <li class="header__contact-item">
+                        <a class="link header__contact-link header__contact-phone" href="tel:+110001111111">+11 (000)
+                            111-11-11</a>
+                    </li>
+                    <li class="header__contact-item">
+                        <a class="link header__contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+            </address>
+
+            <ul class="list socials__list footer__socials-list header__socials">
+                <li class="socials__list-item footer__socials-item">
+                    <a class="link socials__list-link footer__socials-link" href="">
+                        <svg class="icon-social" width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__list-item footer__socials-item">
+                    <a class="link socials__list-link footer__socials-link" href="">
+                        <svg class="icon-social" width="24" height="24">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__list-item footer__socials-item">
+                    <a class="link socials__list-link footer__socials-link" href="">
+                        <svg class="icon-social" width="24" height="24">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__list-item footer__socials-item">
+                    <a class="link socials__list-link footer__socials-link" href="">
+                        <svg class="icon-social" width="24" height="24">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
