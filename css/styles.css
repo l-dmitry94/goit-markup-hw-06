@@ -708,6 +708,9 @@ body {
   .menu-container.is-open {
     transform: translateX(0);
   }
+  .logo {
+    margin-right: 0;
+  }
   .header {
     padding: 24px 0;
   }
