@@ -131,8 +131,11 @@ body {
   color: var(--ocean);
 }
 .header__burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
-  background: none;
+  background: transparent;
 }
 
 .logo {
@@ -144,6 +147,33 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: 76px;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 80px 40px 40px;
+  background-color: var(--white);
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu-container .modal__button-close {
+  background-color: rgba(var(--cornflower), 0.1);
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.icon-burger {
+  stroke: var(--navyblue);
 }
 
 .hero {
@@ -693,24 +723,6 @@ body {
 }
 
 @media (max-width: 767px) {
-  .menu-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--white);
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 80px 40px 40px 40px;
-  }
-  .menu-container.is-open {
-    transform: translateX(0);
-  }
-  .logo {
-    margin-right: 0;
-  }
   .header {
     padding: 24px 0;
   }
@@ -720,32 +732,45 @@ body {
   .header__mobile-menu {
     display: flex;
     flex-direction: column;
-    gap: 40px;
   }
   .header__menu-link {
     font-size: 36px;
+    font-weight: 700;
     line-height: 1.11;
+    text-transform: capitalize;
     padding: 0;
   }
   .header__menu-link.current::after {
     display: none;
   }
   .header__mobile-address {
-    font-style: normal;
+    display: block;
   }
   .header__contact {
     flex-direction: column;
   }
-  .header__contact-phone {
+  .header__contact-link {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .header__contact-tel {
     color: var(--iris);
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
-    letter-spacing: 0.02em;
   }
   .header__socials {
+    justify-content: flex-start;
     gap: 56px;
-    justify-content: start;
     margin-top: 48px;
+  }
+  .logo {
+    margin-right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
   }
 }

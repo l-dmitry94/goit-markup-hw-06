@@ -47,7 +47,7 @@
                 </ul>
             </address>
             <button class="menu-toggle js-open-menu header__burger" aria-expanded="false" aria-controls="mobile-menu">
-                <svg class="header__burger-icon" width="32" height="22" stroke="black">
+                <svg class="icon-burger" width="32" height="22">
                     <use href="./images/icons.svg#icon-burger"></use>
                 </svg>
             </button>
@@ -471,24 +471,25 @@
                 <use href="./images/icons.svg#icon-modal-close"></use>
             </svg>
         </button>
+        <nav class="header__nav">
+            <ul class="list header__menu header__mobile-menu">
+                <li class="header__menu-item">
+                    <a class="link header__menu-link current" href="./index.html">Studio</a>
+                </li>
+                <li class="header__menu-item">
+                    <a class="link header__menu-link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="header__menu-item">
+                    <a class="link header__menu-link" href="">Contacts</a>
+                </li>
+            </ul>
+        </nav>
 
-        <ul class="list header__mobile-menu">
-            <li class="header__menu-item">
-                <a class="link header__menu-link current" href="./index.html">Studio</a>
-            </li>
-            <li class="header__menu-item">
-                <a class="link header__menu-link" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li class="header__menu-item">
-                <a class="link header__menu-link" href="">Contacts</a>
-            </li>
-        </ul>
-
-        <div class="header__bottom-block">
-            <address class="header__mobile-address">
+        <div class="header__mobile-block">
+            <address class="header__address header__mobile-address">
                 <ul class="list header__contact">
                     <li class="header__contact-item">
-                        <a class="link header__contact-link header__contact-phone" href="tel:+110001111111">+11 (000)
+                        <a class="link header__contact-link header__contact-tel" href="tel:+110001111111">+11 (000)
                             111-11-11</a>
                     </li>
                     <li class="header__contact-item">
@@ -533,7 +534,9 @@
     </div>
 
 
-
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
 </body>

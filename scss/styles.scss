@@ -106,8 +106,11 @@ body {
     }
 
     &__burger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border: none;
-        background: none;
+        background: transparent;
     }
 }
 
@@ -120,6 +123,35 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-right: 76px;
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 80px 40px 40px;
+    background-color: var(--white);
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & .modal__button-close {
+        background-color: rgba(var(--cornflower), 0.1);
+    }
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+  }
+
+.icon-burger {
+    stroke: var(--navyblue);
 }
 
 .hero {

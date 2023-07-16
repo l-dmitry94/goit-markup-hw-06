@@ -1,25 +1,4 @@
 @media (max-width: 767px) {
-    .menu-container {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: var(--white);
-        display: none;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 80px 40px 40px 40px;
-
-        &.is-open {
-            transform: translateX(0);
-        }
-    }
-
-    .logo {
-        margin-right: 0;
-    }
-
     .header {
         padding: 24px 0;
 
@@ -31,12 +10,13 @@
         &__mobile-menu {
             display: flex;
             flex-direction: column;
-            gap: 40px;
         }
 
         &__menu-link {
             font-size: 36px;
+            font-weight: 700;
             line-height: 1.11;
+            text-transform: capitalize;
             padding: 0;
 
             &.current::after {
@@ -45,25 +25,40 @@
         }
 
         &__mobile-address {
-            font-style: normal;
+            display: block;
         }
 
         &__contact {
             flex-direction: column;
         }
 
-        &__contact-phone {
+        &__contact-link {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+
+        &__contact-tel {
             color: var(--iris);
             font-size: 36px;
             font-weight: 700;
             line-height: 1.11;
-            letter-spacing: 0.02em;
         }
 
         &__socials {
+            justify-content: flex-start;
             gap: 56px;
-            justify-content: start;
             margin-top: 48px;
         }
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
     }
 }
