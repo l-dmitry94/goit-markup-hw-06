@@ -137,6 +137,9 @@ body {
   border: none;
   background: transparent;
 }
+.header__contact-tel {
+  font-size: 24px;
+}
 
 .logo {
   color: var(--iris);
@@ -823,6 +826,24 @@ body {
     flex-direction: column;
     gap: 16px;
   }
+  .footer__form-input {
+    width: 398px;
+  }
+  .footer__form-button {
+    width: 165px;
+    margin: 0 auto;
+  }
+  .modal__content {
+    width: 392px;
+  }
+}
+@media (max-width: 427px) {
+  .header__contact-tel {
+    font-size: 24px;
+  }
+  .footer__form-input {
+    width: 280px;
+  }
 }
 @media (min-width: 768px) {
   .menu-toggle {
@@ -856,6 +877,19 @@ body {
   }
   .customers__list-item {
     flex-basis: calc((100% - 48px) / 3);
+  }
+  .footer .container {
+    max-width: 552px;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+  }
+  .footer__info {
+    margin-right: 0;
+  }
+  .footer__subscribe {
+    margin-left: 0;
   }
 }
 @media (max-width: 1158px) {
@@ -895,6 +929,12 @@ body {
   }
   .customers__list {
     row-gap: 72px;
+  }
+  .footer__form-input {
+    border-radius: 4px;
+    border: 1px solid var(--white, #FFF);
+    opacity: 0.3000000119;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   }
 }
 @media (min-width: 1158px) {
