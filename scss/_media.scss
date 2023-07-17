@@ -108,11 +108,12 @@
         & .container {
             flex-direction: column;
             gap: 72px;
+
         }
 
         &__info {
             text-align: center;
-            margin-right: 0;
+            margin: 0 auto;
         }
 
         &__text {
@@ -131,17 +132,14 @@
 
         &__form {
             flex-direction: column;
-            max-width: 398px;
-            width: 100%;
+            gap: 16px;
         }
 
         &__form-label {
-            max-width: 398px;
-            width: 100%;
         }
         
         &__form-input {
-            
+
         }
 
         &__button {
