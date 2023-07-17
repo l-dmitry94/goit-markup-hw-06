@@ -155,8 +155,7 @@ body {
 }
 
 .hero {
-    max-width: 1440px;
-    width: 100%;
+    // max-width: 1440px;
     background-color: var(--navyblue);
     background-image: linear-gradient(var(--grey), var(--grey)), url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
@@ -203,6 +202,7 @@ body {
 
     &__list {
         display: flex;
+        flex-direction: column;
         gap: 24px;
     }
 
@@ -266,6 +266,7 @@ body {
 
     &__list {
         display: flex;
+        flex-wrap: wrap;
         gap: 24px;
     }
 
@@ -336,6 +337,7 @@ body {
 
     &__list {
         display: flex;
+        flex-wrap: wrap;
         gap: 24px;
     }
 
