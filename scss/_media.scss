@@ -310,3 +310,10 @@
     }
 }
 
+@media (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(var(--grey), var(--grey)), url(../images/hero-bg@2x.jpg);
+
+    }
+}
+

@@ -942,3 +942,8 @@ body {
     display: flex;
   }
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(var(--grey), var(--grey)), url(../images/hero-bg@2x.jpg);
+  }
+}
