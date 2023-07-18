@@ -505,10 +505,12 @@ body {
   padding: 12px 24px;
 }
 .portfolio__filter-button:hover, .portfolio__filter-button:focus {
-  color: var(--white);
-  background-color: var(--ocean);
   border: 1px solid transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.portfolio__filter-button.current {
+  color: var(--white);
+  background-color: var(--ocean);
 }
 .portfolio__list {
   display: flex;
@@ -535,6 +537,9 @@ body {
   overflow: hidden;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.portfolio__img {
+  width: 100%;
+}
 .portfolio__text {
   width: 100%;
   height: 100%;
@@ -546,7 +551,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.32px;
   background-color: var(--iris);
-  transform: translateY(100%);
+  transform: translateY(calc(100% + 1px));
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px 32px;
 }
@@ -836,10 +841,29 @@ body {
   .modal__content {
     width: 392px;
   }
+  .portfolio {
+    padding: 48px 0;
+  }
+  .portfolio__filter {
+    max-width: 268px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 16px;
+    margin-bottom: 48px;
+  }
+  .portfolio__filter-button {
+    padding: 8px 16px;
+  }
+  .portfolio__item {
+    flex-basis: 100%;
+  }
 }
 @media (max-width: 427px) {
   .header__contact-tel {
     font-size: 24px;
+  }
+  .header__socials {
+    gap: 26px;
   }
   .footer__form-input {
     width: 280px;
@@ -858,6 +882,11 @@ body {
   .header__contact {
     flex-direction: column;
     gap: 12px;
+  }
+  .header__contact-link {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
   }
   .features__list-item {
     flex-basis: calc((100% - 24px) / 2);
@@ -890,6 +919,18 @@ body {
   }
   .footer__subscribe {
     margin-left: 0;
+  }
+  .portfolio {
+    padding: 64px 0 96px;
+  }
+  .portfolio__filter {
+    margin-bottom: 64px;
+  }
+  .portfolio__list {
+    row-gap: 72px;
+  }
+  .portfolio__item {
+    flex-basis: calc((100% - 24px) / 2);
   }
 }
 @media (max-width: 1158px) {
@@ -935,6 +976,13 @@ body {
     border: 1px solid var(--white, #FFF);
     opacity: 0.3000000119;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  }
+  .portfolio__link {
+    border: 1px solid var(--cloud);
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  }
+  .portfolio__info {
+    border: none;
   }
 }
 @media (min-width: 1158px) {

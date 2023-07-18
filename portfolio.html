@@ -26,10 +26,10 @@
                 </a>
                 <ul class="list header__menu">
                     <li class="header__menu-item">
-                        <a class="link header__menu-link" href="./index.html">Studio</a>
+                        <a class="link header__menu-link current" href="./index.html">Studio</a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="link header__menu-link current" href="./portfolio.html">Portfolio</a>
+                        <a class="link header__menu-link" href="./portfolio.html">Portfolio</a>
                     </li>
                     <li class="header__menu-item">
                         <a class="link header__menu-link" href="">Contacts</a>
@@ -46,8 +46,12 @@
                     </li>
                 </ul>
             </address>
+            <button class="menu-toggle js-open-menu header__burger" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="icon-burger" width="32" height="22">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
         </div>
-
     </header>
 
     <main class="main">
@@ -57,7 +61,7 @@
                 <h1 class="visually-hidden">Portfolio</h1>
                 <ul class="list portfolio__filter">
                     <li class="portfolio__filter-item">
-                        <button class="portfolio__filter-button" type="button">All</button>
+                        <button class="portfolio__filter-button current" type="button">All</button>
                     </li>
                     <li class="portfolio__filter-item">
                         <button class="portfolio__filter-button" type="button">Web Site</button>
@@ -76,8 +80,8 @@
                     <li class="portfolio__item">
                         <a class="link portfolio__link" href="">
                             <div class="portfolio__item-block">
-                                <img class="portfolio__img" src="./images/portfolio-1.jpg"
-                                    alt="Banking App Interface Concept" width="360">
+                                <img class="portfolio__img" srcset="./images/portfolio-1.jpg 1x, ./images/portfolio-1@2x.jpg 2x" src="./images/portfolio-1@2x.jpg"
+                                    alt="Banking App Interface Concept">
                                 <p class="portfolio__text">14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
                                     Tracker App · Exotic Fruit Ecommerce
@@ -94,8 +98,7 @@
                     <li class="portfolio__item">
                         <a class="link portfolio__link" href="">
                             <div class="portfolio__item-block">
-                                <img class="portfolio__img" src="./images/portfolio-2.jpg" alt="Cashless Payment"
-                                    width="360">
+                                <img class="portfolio__img" srcset="./images/portfolio-2.jpg 1x, ./images/portfolio-2@2x.jpg 2x" src="./images/portfolio-2.jpg" alt="Cashless Payment">
                                 <p class="portfolio__text">14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
                                     Tracker App · Exotic Fruit Ecommerce
@@ -112,8 +115,7 @@
                     <li class="portfolio__item">
                         <a class="link portfolio__link" href="">
                             <div class="portfolio__item-block">
-                                <img class="portfolio__img" src="./images/portfolio-3.jpg" alt="Meditation App"
-                                    width="360">
+                                <img class="portfolio__img" srcset="./images/portfolio-3.jpg 1x, ./images/portfolio-3@2x.jpg 2x" src="./images/portfolio-3.jpg" alt="Meditation App">
                                 <p class="portfolio__text">14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
                                     Tracker App · Exotic Fruit Ecommerce
@@ -130,8 +132,7 @@
                     <li class="portfolio__item">
                         <a class="link portfolio__link" href="">
                             <div class="portfolio__item-block">
-                                <img class="portfolio__img" src="./images/portfolio-4.jpg" alt="Taxi Service"
-                                    width="360">
+                                <img class="portfolio__img" srcset="./images/portfolio-4.jpg 1x, ./images/portfolio-4@2x.jpg 2x" src="./images/portfolio-4.jpg" alt="Taxi Service">
                                 <p class="portfolio__text">14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
                                     Tracker App · Exotic Fruit Ecommerce
@@ -148,14 +149,13 @@
                     <li class="portfolio__item">
                         <a class="link portfolio__link" href="">
                             <div class="portfolio__item-block">
-                                <img class="portfolio__img" src="./images/portfolio-5.jpg" alt="Screen Illustrations"
-                                    width="360">
+                                <img class="portfolio__img" srcset="./images/portfolio-5.jpg 1x, ./images/portfolio-5@2x.jpg 2x" src="./images/portfolio-5.jpg" alt="Screen Illustrations">
                                 <p class="portfolio__text">14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
                                     Tracker App · Exotic Fruit Ecommerce
                                     App · Cloud Storage App
                                 </p>
-                            </div> 
+                            </div>
                             <div class="item-info portfolio__info">
                                 <h2 class="item-title">Screen Illustrations</h2>
                                 <p class="item-text">Design</p>
@@ -166,8 +166,7 @@
                     <li class="portfolio__item">
                         <a class="link portfolio__link" href="">
                             <div class="portfolio__item-block">
-                                <img class="portfolio__img" src="./images/portfolio-6.jpg" alt="Online Courses"
-                                    width="360">
+                                <img class="portfolio__img" srcset="./images/portfolio-6.jpg 1x, ./images/portfolio-6@2x.jpg 2x" src="./images/portfolio-6.jpg" alt="Online Courses">
                                 <p class="portfolio__text">14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
                                     Tracker App · Exotic Fruit Ecommerce
@@ -184,8 +183,8 @@
                     <li class="portfolio__item">
                         <a class="link portfolio__link" href="">
                             <div class="portfolio__item-block">
-                                <img class="portfolio__img" src="./images/portfolio-7.jpg"
-                                    alt="Instagram Stories Concept" width="360">
+                                <img class="portfolio__img" srcset="./images/portfolio-7.jpg 1x, ./images/portfolio-7@2x.jpg 2x" src="./images/portfolio-7.jpg"
+                                    alt="Instagram Stories Concept">
                                 <p class="portfolio__text">14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
                                     Tracker App · Exotic Fruit Ecommerce
@@ -202,8 +201,7 @@
                     <li class="portfolio__item">
                         <a class="link portfolio__link" href="">
                             <div class="portfolio__item-block">
-                                <img class="portfolio__img" src="./images/portfolio-8.jpg" alt="Organic Food"
-                                    width="360">
+                                <img class="portfolio__img" srcset="./images/portfolio-8.jpg 1x, ./images/portfolio-8@2x.jpg 2x" src="./images/portfolio-8.jpg" alt="Organic Food">
                                 <p class="portfolio__text">14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
                                     Tracker App · Exotic Fruit Ecommerce
@@ -220,8 +218,7 @@
                     <li class="portfolio__item">
                         <a class="link portfolio__link" href="">
                             <div class="portfolio__item-block">
-                                <img class="portfolio__img" src="./images/portfolio-9.jpg" alt="Fresh Coffee"
-                                    width="360">
+                                <img class="portfolio__img" srcset="./images/portfolio-9.jpg 1x, ./images/portfolio-9@2x.jpg 2x" src="./images/portfolio-9.jpg" alt="Fresh Coffee">
                                 <p class="portfolio__text">14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
                                     Tracker App · Exotic Fruit Ecommerce
@@ -304,7 +301,73 @@
         </div>
     </footer>
 
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu modal__button-close" type="button">
+            <svg class="modal__close-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-modal-close"></use>
+            </svg>
+        </button>
+        <nav class="header__nav">
+            <ul class="list header__menu header__mobile-menu">
+                <li class="header__menu-item">
+                    <a class="link header__menu-link current" href="./index.html">Studio</a>
+                </li>
+                <li class="header__menu-item">
+                    <a class="link header__menu-link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="header__menu-item">
+                    <a class="link header__menu-link" href="">Contacts</a>
+                </li>
+            </ul>
+        </nav>
 
+        <div class="header__mobile-block">
+            <address class="header__address header__mobile-address">
+                <ul class="list header__contact">
+                    <li class="header__contact-item">
+                        <a class="link header__contact-link header__contact-tel" href="tel:+110001111111">+11 (000)
+                            111-11-11</a>
+                    </li>
+                    <li class="header__contact-item">
+                        <a class="link header__contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+            </address>
+
+            <ul class="list socials__list footer__socials-list header__socials">
+                <li class="socials__list-item footer__socials-item">
+                    <a class="link socials__list-link footer__socials-link" href="">
+                        <svg class="icon-social" width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__list-item footer__socials-item">
+                    <a class="link socials__list-link footer__socials-link" href="">
+                        <svg class="icon-social" width="24" height="24">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__list-item footer__socials-item">
+                    <a class="link socials__list-link footer__socials-link" href="">
+                        <svg class="icon-social" width="24" height="24">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__list-item footer__socials-item">
+                    <a class="link socials__list-link footer__socials-link" href="">
+                        <svg class="icon-social" width="24" height="24">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
 
 
 </body>
