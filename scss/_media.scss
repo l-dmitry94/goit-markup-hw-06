@@ -191,6 +191,12 @@
             width: 280px;
         }
     }
+
+    .portfolio {
+        &__filter {
+            column-gap: 16px;
+        }
+    }
 }
 
 @media (min-width: 768px) {

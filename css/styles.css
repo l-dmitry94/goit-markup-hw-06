@@ -868,6 +868,10 @@ body {
   .footer__form-input {
     width: 280px;
   }
+  .portfolio__filter {
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
 }
 @media (min-width: 768px) {
   .menu-toggle {
