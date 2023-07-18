@@ -571,7 +571,7 @@ body {
   height: 100%;
   background-color: var(--navyblue-modal);
   z-index: 100;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__content {
   width: 408px;
@@ -726,8 +726,7 @@ body {
 }
 
 .is-hidden {
-  opacity: 0;
-  visibility: hidden;
+  transform: translateY(-100%);
   pointer-events: none;
 }
 
@@ -871,6 +870,19 @@ body {
   .portfolio__filter {
     -moz-column-gap: 16px;
          column-gap: 16px;
+  }
+  .portfolio .item-title {
+    font-size: 17px;
+  }
+  .modal__content {
+    width: 305px;
+  }
+  .modal__form-checkbox {
+    width: 12px;
+    height: 12px;
+  }
+  .modal__form-checkbox-label {
+    font-size: 8px;
   }
 }
 @media (min-width: 768px) {

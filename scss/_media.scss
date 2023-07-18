@@ -196,6 +196,25 @@
         &__filter {
             column-gap: 16px;
         }
+
+        & .item-title {
+            font-size: 17px;
+        }
+    }
+
+    .modal {
+        &__content {
+            width: 305px;
+        }
+
+        &__form-checkbox {
+            width: 12px;
+            height: 12px;
+        }
+
+        &__form-checkbox-label {
+            font-size: 8px;
+        }
     }
 }
 
